@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6ddc9f0b972c0210c7e1f62de053af87" label="USAS Route Datahouse" max_length="40" name="x_343438_talent_ac_usas_route_datahouse" type="collection">
+        <element label="Agency Unique Identifier" max_length="40" name="agency_unique_identifier" type="string"/>
+        <element label="Team Identifier" max_length="40" name="team_identifier" type="string"/>
+        <element label="Tenant ID" max_length="40" name="tenant_id" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0897ea8f97640210c7e1f62de053af6b" label="Staffing Request Datahouse" max_length="40" name="x_343438_talent_ac_staffing_request_datahouse" type="collection">
+        <element label="Drug Test Required" max_length="40" name="drug_test_required" type="string"/>
+        <element label="Financial Statement Required" max_length="40" name="financial_statement_required" type="string"/>
+        <element label="GOVT Position Sensitivity" max_length="40" name="govt_position_sensitivity" type="string"/>
+        <element label="GOVT Promotion Potential" max_length="40" name="govt_promotion_potential" type="string"/>
+        <element label="GOVT Relocation Assistance Indicator" max_length="40" name="govt_relocation_assistance_indicator" type="string"/>
+        <element label="GOVT Relocation Description" max_length="40" name="govt_relocation_description" type="string"/>
+        <element label="GOVT Supervisory Status" max_length="40" name="govt_supervisory_status" type="string"/>
+        <element label="GOVT Telework" max_length="40" name="govt_telework" type="string"/>
+        <element label="Grades" max_length="40" name="grades" reference="x_343438_talent_ac_grade_datahouse" type="reference"/>
+        <element label="Hiring Validate Need" max_length="40" name="hiring_validate_need" type="string"/>
+        <element label="Occupational Series List" max_length="40" name="occupational_series_list" reference="x_343438_talent_ac_occupational_series_datahouse" type="reference"/>
+        <element label="PartTime Hours" max_length="40" name="parttime_hours" type="string"/>
+        <element label="Position Formatted Description Content" max_length="40" name="position_formatted_description_content" type="string"/>
+        <element label="Position Formatted Description ID" max_length="40" name="position_formatted_description_id" type="string"/>
+        <element label="Position Offering Type Code" max_length="40" name="position_offering_type_code" type="string"/>
+        <element label="Position Schedule Type Code" max_length="40" name="position_schedule_type_code" type="string"/>
+        <element label="Position Title" max_length="40" name="position_title" type="string"/>
+        <element label="Posting Option Code" max_length="40" name="posting_option_code" type="string"/>
+        <element label="Remuneration Rate Interval Code" max_length="40" name="remuneration_rate_interval_code" type="string"/>
+        <element label="Request Personnel Action" max_length="40" name="request_personnel_action" type="string"/>
+        <element label="Schedule Details Not To Exceed Period" max_length="40" name="schedule_details_not_to_exceed_period" type="string"/>
+        <element label="Security Clearance Required" max_length="40" name="security_clearance_required" type="string"/>
+        <element label="Travel Preference Description" max_length="40" name="travel_preference_description" type="string"/>
+        <element label="Travel Preference Percentage" max_length="40" name="travel_preference_percentage" type="string"/>
+    </element>
+</database>

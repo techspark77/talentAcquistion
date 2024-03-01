@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="947ad24b97240210c7e1f62de053afb6" extends="sys_import_set_row" label="Recruit Request Import" max_length="40" name="x_343438_talent_ac_recruit_request_import" type="collection">
+        <element label="Drug Test Required" max_length="40" name="drug_test_required" type="string"/>
+        <element label="Financial Statement Required" max_length="40" name="financial_statement_required" type="string"/>
+        <element label="GOVT Position Sensitivity" max_length="40" name="govt_position_sensitivity" type="string"/>
+        <element label="GOVT Promotion Potential" max_length="40" name="govt_promotion_potential" type="string"/>
+        <element label="GOVT Relocation Assistance Indicator" max_length="40" name="govt_relocation_assistance_indicator" type="string"/>
+        <element label="GOVT Relocation Description" max_length="40" name="govt_relocation_description" type="string"/>
+        <element label="GOVT Supervisory Status" max_length="40" name="govt_supervisory_status" type="string"/>
+        <element label="GOVT Telework" max_length="40" name="govt_telework" type="string"/>
+        <element label="Grade" max_length="40" name="grade" type="string"/>
+        <element label="Hiring Validate Need" max_length="40" name="hiring_validate_need" type="string"/>
+        <element label="locations.locationID" max_length="40" name="locations_locationid" type="string"/>
+        <element label="locations.userArea.GOVTOpenings" max_length="40" name="locations_userarea_govtopenings" type="string"/>
+        <element label="Occupational Series" max_length="40" name="occupational_series" type="string"/>
+        <element label="Part Time Hours" max_length="40" name="part_time_hours" type="string"/>
+        <element label="Position Formatted Description Content" max_length="40" name="position_formatted_description_content" type="string"/>
+        <element label="Position Formatted Description ID" max_length="40" name="position_formatted_description_id" type="string"/>
+        <element label="Position Offering Type Code" max_length="40" name="position_offering_type_code" type="string"/>
+        <element label="Position Schedule Type Code" max_length="40" name="position_schedule_type_code" type="string"/>
+        <element label="Position Title" max_length="500" name="position_title" type="string"/>
+        <element label="Posting Option Code" max_length="40" name="posting_option_code" type="string"/>
+        <element label="Remuneration Rate Interval Code" max_length="40" name="remuneration_rate_interval_code" type="string"/>
+        <element label="Request Personnel Action" max_length="40" name="request_personnel_action" type="string"/>
+        <element label="Schedule Details Not To Exceed Period" max_length="40" name="schedule_details_not_to_exceed_period" type="string"/>
+        <element label="Security Clearance Required" max_length="40" name="security_clearance_required" type="string"/>
+        <element label="Travel Preference Description" max_length="40" name="travel_preference_description" type="string"/>
+        <element label="Travel Preference Percentage" max_length="40" name="travel_preference_percentage" type="string"/>
+        <element label="USASRoute.agencyUniqueIdentifier" max_length="40" name="usasroute_agencyuniqueidentifier" type="string"/>
+        <element label="USASRoute.teamIdentifier" max_length="40" name="usasroute_teamidentifier" type="string"/>
+        <element label="USASRoute.tenantID" max_length="40" name="usasroute_tenantid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=actionCode" label="actionCode" max_length="40" name="u_actioncode" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=agencyRoleCode" label="agencyRoleCode" max_length="40" name="u_agencyrolecode" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BODID" label="BODID" max_length="40" name="u_bodid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=creationDateTime" label="creationDateTime" max_length="40" name="u_creationdatetime" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=locations,json_view" label="locations" max_length="130" name="u_locations" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=organizationID" label="organizationID" max_length="40" name="u_organizationid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=organizationLegalID" label="organizationLegalID" max_length="40" name="u_organizationlegalid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=payPlanCode" label="payPlanCode" max_length="40" name="u_payplancode" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=personID" label="personID" max_length="40" name="u_personid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=positionOpenQuantity" label="positionOpenQuantity" max_length="40" name="u_positionopenquantity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=requestNumber" label="requestNumber" max_length="40" name="u_requestnumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=staffingRequests,json_view" label="staffingRequests" max_length="3000" name="u_staffingrequests" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=USAS_USAJOBSTypes" label="USAS_USAJOBSTypes" max_length="131" name="u_usas_usajobstypes" type="string"/>
+    </element>
+</database>

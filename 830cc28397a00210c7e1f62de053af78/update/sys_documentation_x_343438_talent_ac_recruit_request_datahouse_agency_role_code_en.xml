@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="agency_role_code" label="Agency Role Code" language="en" table="x_343438_talent_ac_recruit_request_datahouse">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>agency_role_code</element>
+            <help/>
+            <hint/>
+            <label>Agency Role Code</label>
+            <language>en</language>
+            <name>x_343438_talent_ac_recruit_request_datahouse</name>
+            <plural>Agency Role Codes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:52:20</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Agency Role Code</sys_name>
+            <sys_package display_value="Talent Acquisition" source="x_343438_talent_ac">830cc28397a00210c7e1f62de053af78</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Talent Acquisition">830cc28397a00210c7e1f62de053af78</sys_scope>
+            <sys_update_name>sys_documentation_x_343438_talent_ac_recruit_request_datahouse_agency_role_code_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:52:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

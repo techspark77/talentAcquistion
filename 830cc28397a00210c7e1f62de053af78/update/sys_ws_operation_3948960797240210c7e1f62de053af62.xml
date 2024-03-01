@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_343438_talent_ac/recruit_request_api/post</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Payload Send to ServiceNow</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    /**
+     At this moment, the below script is working 02/29/2024. Only the first value of the object is displaying at the moment. 
+     
+     
+     */
+	
+	var answer = [];
+    var requestBody = request.body;
+    var requestString = requestBody.dataString;
+    var result = JSON.parse(requestString);
+	
+	
+	// Function to check if the JSON is valid
+    function isValidJSON(payload) {
+        try {
+            JSON.parse(payload);
+            return true; // JSON is valid
+        } catch (e) {
+            return false; // JSON is invalid
+        }
+    }
+	
+	if (!isValidJSON(requestString)) {
+        response.setStatus(400);
+        response.setBody({"error": "Invalid JSON format"});
+        return;
+    }
+
+	
+    try {
+        var recruitRequestImport = 'x_343438_talent_ac_recruit_request_import';
+        result.forEach(function(item) {
+            var importGr = new GlideRecord(recruitRequestImport);
+            importGr.initialize();
+            importGr.setValue('u_requestnumber', item.requestNumber);
+            importGr.setValue('u_positionopenquantity', item.positionOpenQuantity);
+            importGr.setValue('u_creationdatetime', item.creationDateTime);
+            importGr.setValue('u_bodid', item.BODID);
+            importGr.setValue('u_organizationid', item.organizationID);
+            importGr.setValue('u_organizationlegalid', item.organizationLegalID);
+            importGr.setValue('u_actioncode', item.actionCode);
+            importGr.setValue('u_payplancode', item.payPlanCode);
+            importGr.setValue('usasroute_tenantid', item.USASRoute.tenantID);
+            importGr.setValue('usasroute_agencyuniqueidentifier', item.USASRoute.agencyUniqueIdentifier);
+            importGr.setValue('usasroute_teamidentifier', item.USASRoute.teamIdentifier);
+            importGr.setValue('u_agencyrolecode', item.agencyRoleCode);
+            importGr.setValue('u_personid', item.personID);
+
+
+            //LocationsArray
+            var locationsConcat = item.locations.map(function(location) {
+             return location;
+            });
+			var locationsJson = JSON.stringify(locationsConcat);
+            importGr.setValue('u_locations', locationsJson);
+
+
+            //LocationIDArray
+            var locationIDs = item.locations.map(function(location) {
+                return location.locationID;
+            });
+
+            // Serialize the array of locationID values as a JSON string
+            var locationIDsJson = JSON.stringify(locationIDs);
+            importGr.setValue('locations_locationid', locationIDsJson);
+
+
+            //LocationUserAreaGOVTOpeningsArray
+            var locationUserAreaGOVTOpenings = item.locations.map(function(location) {
+                return location.userArea.GOVTOpenings;
+            });
+            var locationUserAreaGOVTOpeningsJSON = JSON.stringify(locationUserAreaGOVTOpenings);
+            importGr.setValue('locations_userarea_govtopenings', locationUserAreaGOVTOpeningsJSON);
+
+
+            //USAS_USAJOBSTypesArray
+            var usaJobsType = item.USAS_USAJOBSTypes.map(function(USAS_USAJOBSType) {
+                return USAS_USAJOBSType.USAS_USAJOBSType;
+            });
+            var usaJobsTypeJson = JSON.stringify(usaJobsType);
+            importGr.setValue('u_usas_usajobstypes', usaJobsTypeJson);
+
+
+            //StaffingRequestArray
+            var staffingRequestsInfo = item.staffingRequests.map(function(request) {
+                return {
+                    positionTitle: request.positionTitle,
+                    positionFormattedDescriptionID: request.positionFormattedDescriptionID,
+                    occupationalSeriesList: request.occupationalSeriesList.map(series => series.occupationalSeries),
+                    grades: request.grades.map(grade => grade.grade),
+                    securityClearanceRequired: request.securityClearanceRequired,
+                    drugTestRequired: request.drugTestRequired,
+                    positionOfferingTypeCode: request.positionOfferingTypeCode,
+                    positionScheduleTypeCode: request.positionScheduleTypeCode,
+                    hiringValidateNeed: request.hiringValidateNeed,
+                    requestPersonnelAction: request.requestPersonnelAction,
+                    financialStatementRequired: request.financialStatementRequired,
+                    positionFormattedDescriptionContent: request.positionFormattedDescriptionContent,
+                    travelPreferencePercentage: request.travelPreferencePercentage,
+                    travelPreferenceDescription: request.travelPreferenceDescription,
+                    remunerationRateIntervalCode: request.remunerationRateIntervalCode,
+                    GOVTRelocationAssistanceIndicator: request.GOVTRelocationAssistanceIndicator,
+                    GOVTRelocationDescription: request.GOVTRelocationDescription,
+                    scheduleDetailsNotToExceedPeriod: request.scheduleDetailsNotToExceedPeriod,
+                    partTimeHours: request.partTimeHours,
+                    GOVTSupervisoryStatus: request.GOVTSupervisoryStatus,
+                    GOVTPromotionPotential: request.GOVTPromotionPotential,
+                    GOVTTelework: request.GOVTTelework,
+                    postingOptionCode: request.postingOptionCode,
+                    GOVTPositionSensitivity: request.GOVTPositionSensitivity
+                };
+            });
+
+			
+            // Serialize the structured staffingRequests information as a JSON string
+            var staffingRequestsJson = JSON.stringify(staffingRequestsInfo);
+            importGr.setValue('u_staffingrequests', staffingRequestsJson);
+
+
+            //Parsing each key and value and assigning it to separate fields.
+            //PositionTitle Field Value
+            var positionTitles = staffingRequestsInfo.map(function(info) {
+                return info.positionTitle;
+            });
+            var positionTitlesJson = JSON.stringify(positionTitles);
+            importGr.setValue('position_title', positionTitlesJson);
+
+
+            //positionFormattedDescriptionIDs Field Value
+            var positionFormattedDescriptionIDs = staffingRequestsInfo.map(function(info) {
+                return info.positionFormattedDescriptionID;
+            });
+            var positionFormattedDescriptionIDsJson = JSON.stringify(positionFormattedDescriptionIDs);
+            importGr.setValue('position_formatted_description_id', positionFormattedDescriptionIDsJson);
+
+
+            //securityClearanceRequired Field Value
+            var securityClearanceRequired = staffingRequestsInfo.map(function(info) {
+                return info.securityClearanceRequired;
+            });
+            var securityClearanceRequiredJSON = JSON.stringify(securityClearanceRequired);
+            importGr.setValue('security_clearance_required', securityClearanceRequiredJSON);
+
+
+            //drugTestRequired Field Value
+            var drugTestRequired = staffingRequestsInfo.map(function(info) {
+                return info.drugTestRequired;
+            });
+            var drugTestRequiredJSON = JSON.stringify(drugTestRequired);
+            importGr.setValue('drug_test_required', drugTestRequiredJSON);
+
+
+            //positionOfferingTypeCode Field Value
+            var positionOfferingTypeCode = staffingRequestsInfo.map(function(info) {
+                return info.positionOfferingTypeCode;
+            });
+            var positionOfferingTypeCodeJSON = JSON.stringify(positionOfferingTypeCode);
+            importGr.setValue('position_offering_type_code', positionOfferingTypeCodeJSON);
+
+
+            //positionScheduleTypeCode Field Value
+            var positionScheduleTypeCode = staffingRequestsInfo.map(function(info) {
+                return info.positionScheduleTypeCode;
+            });
+            var positionScheduleTypeCodeJSON = JSON.stringify(positionScheduleTypeCode);
+            importGr.setValue('position_schedule_type_code', positionScheduleTypeCodeJSON);
+
+
+            //hiringValidateNeed Field Value
+            var hiringValidateNeed = staffingRequestsInfo.map(function(info) {
+                return info.hiringValidateNeed;
+            });
+            var hiringValidateNeedJSON = JSON.stringify(hiringValidateNeed);
+            importGr.setValue('hiring_validate_need', hiringValidateNeedJSON);
+
+
+            //requestPersonnelAction Field Value
+            var requestPersonnelAction = staffingRequestsInfo.map(function(info) {
+                return info.requestPersonnelAction;
+            });
+            var requestPersonnelActionJSON = JSON.stringify(requestPersonnelAction);
+            importGr.setValue('request_personnel_action', requestPersonnelActionJSON);
+
+
+            //financialStatementRequired Field Value
+            var financialStatementRequired = staffingRequestsInfo.map(function(info) {
+                return info.financialStatementRequired;
+            });
+            var financialStatementRequiredJSON = JSON.stringify(financialStatementRequired);
+            importGr.setValue('financial_statement_required', financialStatementRequiredJSON);
+
+
+            //positionFormattedDescriptionContent Field Value
+            var positionFormattedDescriptionContent = staffingRequestsInfo.map(function(info) {
+                return info.positionFormattedDescriptionContent;
+            });
+            var positionFormattedDescriptionContentJSON = JSON.stringify(positionFormattedDescriptionContent);
+            importGr.setValue('position_formatted_description_content', positionFormattedDescriptionContentJSON);
+
+
+            //travelPreferencePercentage Field Value
+            var travelPreferencePercentage = staffingRequestsInfo.map(function(info) {
+                return info.travelPreferencePercentage;
+            });
+            var travelPreferencePercentageJSON = JSON.stringify(travelPreferencePercentage);
+            importGr.setValue('travel_preference_percentage', travelPreferencePercentageJSON);
+
+
+            //travelPreferenceDescription Field Value
+            var travelPreferenceDescription = staffingRequestsInfo.map(function(info) {
+                return info.travelPreferenceDescription;
+            });
+            var travelPreferenceDescriptionJSON = JSON.stringify(travelPreferenceDescription);
+            importGr.setValue('travel_preference_description', travelPreferenceDescriptionJSON);
+
+
+            //remunerationRateIntervalCode Field Value
+            var remunerationRateIntervalCode = staffingRequestsInfo.map(function(info) {
+                return info.remunerationRateIntervalCode;
+            });
+            var remunerationRateIntervalCodeJSON = JSON.stringify(remunerationRateIntervalCode);
+            importGr.setValue('remuneration_rate_interval_code', remunerationRateIntervalCodeJSON);
+
+
+            //GOVTRelocationAssistanceIndicator Field Value
+            var GOVTRelocationAssistanceIndicator = staffingRequestsInfo.map(function(info) {
+                return info.GOVTRelocationAssistanceIndicator;
+            });
+            var GOVTRelocationAssistanceIndicatorJSON = JSON.stringify(GOVTRelocationAssistanceIndicator);
+            importGr.setValue('govt_relocation_assistance_indicator', GOVTRelocationAssistanceIndicatorJSON);
+
+
+            //GOVTRelocationDescription Field Value
+            var GOVTRelocationDescription = staffingRequestsInfo.map(function(info) {
+                return info.GOVTRelocationDescription;
+            });
+            var GOVTRelocationDescriptionJSON = JSON.stringify(GOVTRelocationDescription);
+            importGr.setValue('govt_relocation_description', GOVTRelocationDescriptionJSON);
+
+
+            //scheduleDetailsNotToExceedPeriod Field Value
+            var scheduleDetailsNotToExceedPeriod = staffingRequestsInfo.map(function(info) {
+                return info.scheduleDetailsNotToExceedPeriod;
+            });
+            var scheduleDetailsNotToExceedPeriodJSON = JSON.stringify(scheduleDetailsNotToExceedPeriod);
+            importGr.setValue('schedule_details_not_to_exceed_period', scheduleDetailsNotToExceedPeriodJSON);
+
+
+            //partTimeHours Field Value
+            var partTimeHours = staffingRequestsInfo.map(function(info) {
+                return info.partTimeHours;
+            });
+            var partTimeHoursJSON = JSON.stringify(partTimeHours);
+            importGr.setValue('part_time_hours', partTimeHoursJSON);
+
+
+            //GOVTSupervisoryStatus Field Value
+            var GOVTSupervisoryStatus = staffingRequestsInfo.map(function(info) {
+                return info.GOVTSupervisoryStatus;
+            });
+            var GOVTSupervisoryStatusJSON = JSON.stringify(GOVTSupervisoryStatus);
+            importGr.setValue('govt_supervisory_status', GOVTSupervisoryStatusJSON);
+
+
+            //GOVTPromotionPotential Field Value
+            var GOVTPromotionPotential = staffingRequestsInfo.map(function(info) {
+                return info.GOVTPromotionPotential;
+            });
+            var GOVTPromotionPotentialJSON = JSON.stringify(GOVTPromotionPotential);
+            importGr.setValue('govt_promotion_potential', GOVTPromotionPotentialJSON);
+
+
+            //GOVTTelework Field Value
+            var GOVTTelework = staffingRequestsInfo.map(function(info) {
+                return info.GOVTTelework;
+            });
+            var GOVTTeleworkJSON = JSON.stringify(GOVTTelework);
+            importGr.setValue('govt_telework', GOVTTeleworkJSON);
+
+
+            //postingOptionCode Field Value
+            var postingOptionCode = staffingRequestsInfo.map(function(info) {
+                return info.postingOptionCode;
+            });
+            var postingOptionCodeJSON = JSON.stringify(postingOptionCode);
+            importGr.setValue('posting_option_code', postingOptionCodeJSON);
+
+
+            //GOVTPositionSensitivity Field Value
+            var GOVTPositionSensitivity = staffingRequestsInfo.map(function(info) {
+                return info.GOVTPositionSensitivity;
+            });
+            var GOVTPositionSensitivityJSON = JSON.stringify(GOVTPositionSensitivity);
+            importGr.setValue('govt_position_sensitivity', GOVTPositionSensitivityJSON);
+
+
+            //occupationalSeriesListsArray separated by comma
+            var occupationalSeriesLists = staffingRequestsInfo.map(function(info) {
+                return info.occupationalSeriesList.join(", ");
+            });
+            var occupationalSeriesListsJson = JSON.stringify(occupationalSeriesLists);
+            importGr.setValue('occupational_series', occupationalSeriesListsJson);
+
+
+            //gradesArray Separated by comma
+            var grades = staffingRequestsInfo.map(function(info) {
+                return info.grades.join(", ");
+            });
+            var gradesJson = JSON.stringify(grades);
+            importGr.setValue('grade', gradesJson);
+
+            var newRecordSysId = importGr.insert();
+            var recruitRequestObj;
+
+            if (newRecordSysId) {
+                recruitRequestObj = {
+                    "sys_id": newRecordSysId,
+                    "requestNumber": importGr.u_requestnumber.getDisplayValue(),
+                    "status": "Success",
+                    "message": "Data inserted successfully in import set table"
+                };
+            } else {
+
+                recruitRequestObj = {
+                    "status": "Error",
+                    "message": "Failed to insert data in import set table"
+                };
+            }
+
+            answer.push(recruitRequestObj);
+        });
+
+        response.setStatus(201);
+
+
+    } catch (error) {
+        var serviceError = new sn_ws_err.ServiceError();
+        serviceError.setStatus(500);
+        serviceError.setMessage('Niamul - Custom Error');
+        serviceError.setDetail('Description - Niamul Error');
+        response.setError(serviceError);
+
+    }
+	
+    response.setBody(answer);
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_343438_talent_ac/v1/recruit_request_api/post</operation_uri>
+        <produces>application/json</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/post</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-28 19:47:23</sys_created_on>
+        <sys_id>3948960797240210c7e1f62de053af62</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_name>Payload Send to ServiceNow</sys_name>
+        <sys_package display_value="Talent Acquisition" source="x_343438_talent_ac">830cc28397a00210c7e1f62de053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Talent Acquisition">830cc28397a00210c7e1f62de053af78</sys_scope>
+        <sys_update_name>sys_ws_operation_3948960797240210c7e1f62de053af62</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-01 02:13:12</sys_updated_on>
+        <web_service_definition display_value="Recruit Request API">a9189ec397240210c7e1f62de053affd</web_service_definition>
+        <web_service_version display_value="v1">5048d20797240210c7e1f62de053af2a</web_service_version>
+    </sys_ws_operation>
+</record_update>

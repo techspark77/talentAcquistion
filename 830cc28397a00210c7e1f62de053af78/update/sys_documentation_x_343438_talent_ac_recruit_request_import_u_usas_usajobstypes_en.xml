@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_usas_usajobstypes" label="USAS_USAJOBSTypes" language="en" table="x_343438_talent_ac_recruit_request_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_usas_usajobstypes</element>
+            <help/>
+            <hint/>
+            <label>USAS_USAJOBSTypes</label>
+            <language>en</language>
+            <name>x_343438_talent_ac_recruit_request_import</name>
+            <plural>USAS_USAJOBSTypes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 19:55:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>USAS_USAJOBSTypes</sys_name>
+            <sys_package display_value="Talent Acquisition" source="x_343438_talent_ac">830cc28397a00210c7e1f62de053af78</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Talent Acquisition">830cc28397a00210c7e1f62de053af78</sys_scope>
+            <sys_update_name>sys_documentation_x_343438_talent_ac_recruit_request_import_u_usas_usajobstypes_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 19:55:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

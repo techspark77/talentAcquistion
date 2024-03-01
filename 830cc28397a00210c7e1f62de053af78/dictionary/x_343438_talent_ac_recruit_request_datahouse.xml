@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5255a20b97640210c7e1f62de053af39" label="Recruit Request Datahouse" max_length="40" name="x_343438_talent_ac_recruit_request_datahouse" type="collection">
+        <element label="Action Code" max_length="40" name="action_code" type="string"/>
+        <element label="Agency Role Code" max_length="40" name="agency_role_code" type="string"/>
+        <element label="BODID" max_length="40" name="bodid" type="string"/>
+        <element label="Competitive" max_length="40" name="competitive" type="boolean"/>
+        <element label="Creation Date &amp; Time" max_length="40" name="creation_date_time" type="string"/>
+        <element label="Department ID" max_length="40" name="department_id" type="string"/>
+        <element label="GOVT Request Process Owner Email" max_length="40" name="govt_request_process_owner_email" type="string"/>
+        <element label="Internal Merit Promotion" max_length="40" name="internal_merit_promotion" type="boolean"/>
+        <element label="Locations" max_length="40" name="locations" reference="cmn_location" type="reference"/>
+        <element label="Merit Promotion" max_length="40" name="merit_promotion" type="boolean"/>
+        <element label="NFC Org Code" max_length="40" name="nfc_org_code" type="string"/>
+        <element label="Organization ID" max_length="40" name="organization_id" type="string"/>
+        <element label="Organization Legal ID" max_length="40" name="organization_legal_id" type="string"/>
+        <element label="Pay Plan Code" max_length="40" name="pay_plan_code" type="string"/>
+        <element label="Person ID" max_length="40" name="person_id" type="string"/>
+        <element label="Position Open Quantity" max_length="40" name="position_open_quantity" type="string"/>
+        <element label="Request Number" max_length="40" name="request_number" type="string"/>
+        <element label="Staffing Request" max_length="40" name="staffing_request" reference="x_343438_talent_ac_staffing_request_datahouse" type="glide_list"/>
+        <element label="USAS Route" max_length="40" name="usas_route" reference="x_343438_talent_ac_usas_route_datahouse" type="reference"/>
+        <element label="Work Planning Control Code" max_length="40" name="work_planning_control_code" type="string"/>
+    </element>
+</database>

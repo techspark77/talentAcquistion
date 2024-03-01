@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7309a68797a40210c7e1f62de053af29" sys_domain="global" table="x_343438_talent_ac_staffing_request_datahouse" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7309a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_formatted_description_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f709a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>financial_statement_required</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7b09a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_title</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>fb09a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>security_clearance_required</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7f09a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hiring_validate_need</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>ff09a68797a40210c7e1f62de053af30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_offering_type_code</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7309a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_personnel_action</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f309a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_formatted_description_content</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7709a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>drug_test_required</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f709a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>occupational_series_list</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7b09a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_schedule_type_code</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>fb09a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_promotion_potential</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7f09a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>ff09a68797a40210c7e1f62de053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>grades</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7309a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remuneration_rate_interval_code</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f309a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>travel_preference_description</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7709a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_supervisory_status</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f709a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parttime_hours</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7b09a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_relocation_assistance_indicator</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>fb09a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>travel_preference_percentage</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7f09a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_telework</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>ff09a68797a40210c7e1f62de053af32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>posting_option_code</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7309a68797a40210c7e1f62de053af33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_relocation_description</element>
+            <position>23</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f309a68797a40210c7e1f62de053af33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>schedule_details_not_to_exceed_period</element>
+            <position>24</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7709a68797a40210c7e1f62de053af33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>govt_position_sensitivity</element>
+            <position>25</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>f709a68797a40210c7e1f62de053af33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>26</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_id>7b09a68797a40210c7e1f62de053af33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_343438_talent_ac_staffing_request_datahouse" sys_domain="global" view="Default view">7309a68797a40210c7e1f62de053af29</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_343438_talent_ac_staffing_request_datahouse</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-28 20:59:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7309a68797a40210c7e1f62de053af29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_343438_talent_ac_staffing_request_datahouse</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Talent Acquisition" source="x_343438_talent_ac">830cc28397a00210c7e1f62de053af78</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Talent Acquisition">830cc28397a00210c7e1f62de053af78</sys_scope>
+            <sys_update_name>sys_ui_section_7309a68797a40210c7e1f62de053af29</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-28 20:59:28</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

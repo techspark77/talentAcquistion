@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-28 20:53:19</sys_created_on>
+        <sys_id>2da7e2c397a40210c7e1f62de053af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_343438_talent_ac_staffing_request_datahouse.x_343438_talent_ac.staffing_request_datahouse_user</sys_name>
+        <sys_package display_value="Talent Acquisition" source="x_343438_talent_ac">830cc28397a00210c7e1f62de053af78</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Talent Acquisition">830cc28397a00210c7e1f62de053af78</sys_scope>
+        <sys_security_acl display_value="x_343438_talent_ac_staffing_request_datahouse">a5a7e2c397a40210c7e1f62de053af89</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2da7e2c397a40210c7e1f62de053af8c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-28 20:53:19</sys_updated_on>
+        <sys_user_role display_value="x_343438_talent_ac.staffing_request_datahouse_user" name="x_343438_talent_ac.staffing_request_datahouse_user">a9a7a6cf97640210c7e1f62de053aff1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
